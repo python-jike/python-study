@@ -1,0 +1,29 @@
+python -m venv ll_env 
+source ll_env/bin/activate(linux) ll_env\Scripts\activate(windows)
+deactivate 
+pip install Django 
+django-admin.py startproject learning_log .
+ls dir 
+ls learning_log dir learning_log 
+http://127.0.0.1:8000/
+python manage.py runserver 
+python manage.py startapp learning_logs 
+python manage.py makemigrations learning_logs 
+python manage.py migrate
+python manage.py shell
+from learning_logs.models import Topic
+Topic.objects.all() 
+topics = Topic.objects.all() 
+for topic in topics: 
+print(topic.id, topic)
+t = Topic.objects.get(id=3)
+t.date_added 
+t.entry_set.all()
+387
+http://127.0.0.1:8000/
+http://localhost:8000/
+http://localhost:8000/admin/
+
+cd /d E:\learning_log
+ll_env\Scripts\activate
+python manage.py runserver 
