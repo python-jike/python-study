@@ -11,12 +11,7 @@ def count(file_name):
     # TODO with open(file_name, ...)
     # 提示: 用正则会快一点.
     # 给怡宝的提示: 怡宝可以用collection.Counter   (最好先不用, 自己做一次, 熟练以后可以用Counter)
-    with open(file_name, 'r', encoding='utf-8') as f:
-        all = f.readlines()
-    alls = '\n'.join(all)
-    r = re.findall(r'\w+[’]?[\w]*', alls)
-    cc = Counter(r)
-    return dict(cc)
+    return {}
 
 
 if __name__ == '__main__':
